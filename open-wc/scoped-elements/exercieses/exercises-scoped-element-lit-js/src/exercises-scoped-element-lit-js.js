@@ -1,88 +1,38 @@
-import { LitElement, html, css } from 'lit';
 
-const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
+import { LitElement, html, css } from 'lit';
+// import { ScopedElementsMixin } from '@open-wc/scoped-elements';
+
+// Components
+import './component-01/Component01.js'
+import './component-02/Component02.js'
 
 class ExercisesScopedElementLitJs extends LitElement {
-  static properties = {
-    header: { type: String },
-  }
 
-  static styles = css`
-    :host {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      font-size: calc(10px + 2vmin);
-      color: #1a2b42;
-      max-width: 960px;
-      margin: 0 auto;
-      text-align: center;
-      background-color: var(--exercises-scoped-element-lit-js-background-color);
-    }
-
-    main {
-      flex-grow: 1;
-    }
-
-    .logo {
-      margin-top: 36px;
-      animation: app-logo-spin infinite 20s linear;
-    }
-
-    @keyframes app-logo-spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .app-footer {
-      font-size: calc(12px + 0.5vmin);
-      align-items: center;
-    }
-
-    .app-footer a {
-      margin-left: 5px;
-    }
-  `;
-
-  constructor() {
-    super();
-    this.header = 'My app';
-  }
+  // static get ScopedElements() {
+  //   return {
+  //     'component-01': Component01,
+  //     'component-01': Component02,
+  //   }
+  // }
 
   render() {
     return html`
       <main>
-        <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
-        <h1>${this.header}</h1>
+        <h2>SCOPED ELEMENTS</h2>
 
-        <p>Edit <code>src/ExercisesScopedElementLitJs.js</code> and save to reload.</p>
-        <a
-          class="app-link"
-          href="https://open-wc.org/guides/developing-components/code-examples/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Code examples
-        </a>
+        <component-01></component-01>
+        <component-02></component-02>
       </main>
-
-      <p class="app-footer">
-        🚽 Made with love by
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/open-wc"
-          >open-wc</a
-        >.
-      </p>
-    `;
+    `
   }
+
+  static styles = css`
+    :host {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+  `
 }
 
 customElements.define('exercises-scoped-element-lit-js', ExercisesScopedElementLitJs);
