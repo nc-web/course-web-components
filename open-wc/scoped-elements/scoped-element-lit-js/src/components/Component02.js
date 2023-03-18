@@ -1,6 +1,5 @@
 
 import { LitElement, html, css } from 'lit'
-import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 
 export class Component02 extends LitElement {
 

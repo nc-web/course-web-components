@@ -3,8 +3,8 @@ import { LitElement, html, css } from 'lit'
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 
 // Components
-import { Component01 } from './components/Component01.js'
-import { Component02 } from './components/Component02.js'
+// import { Component01 } from './components/Component01.js'
+// import { Component02 } from './components/Component02.js'
 // import { Component03 } from './components/component-03.js'
 // import { Component04 } from './components/component-04.js'
 
