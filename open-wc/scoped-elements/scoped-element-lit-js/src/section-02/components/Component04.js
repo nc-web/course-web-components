@@ -1,18 +1,11 @@
 
 import { LitElement, html, css } from 'lit'
-import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 
-export class Component04 extends ScopedElementsMixin(LitElement) {
-
-    static get scopedElements() {
-        return {
-          'component-04': Component04,
-        }
-    }
+export class Component04 extends LitElement {
 
     render() {
         return html`
-            <h4>COMPONENT 02</h4>
+            <h4>COMPONENT 04</h4>
         `
     }
 
