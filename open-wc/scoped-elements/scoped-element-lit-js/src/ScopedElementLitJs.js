@@ -2,8 +2,11 @@
 import { LitElement, html, css } from 'lit';
 
 // Sections
-import './section-01/section-01.js'
-import './section-02/section-02.js'
+// import './section-01/section-01.js'
+// import './section-02/section-02.js'
+
+import './section-01/Section01.js'
+import './section-02/Section02.js'
 
 // import {Section01} from './section-01/Section01.js'
 // import {Section02} from './section-02/Section02.js'

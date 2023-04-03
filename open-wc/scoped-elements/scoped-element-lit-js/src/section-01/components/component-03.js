@@ -1,6 +1,6 @@
 
-import { Component03 } from './Component03.js'
+// import { Component03 } from './Component03.js'
 
-window.customElements.define('component-03', Component03)
+// customElements.define('component-03', Component03)
 
-export { Component03 }
+// export { Component03 }

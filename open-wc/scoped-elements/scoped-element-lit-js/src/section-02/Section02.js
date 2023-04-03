@@ -3,8 +3,8 @@ import { LitElement, html, css } from 'lit'
 import { ScopedElementsMixin } from '@open-wc/scoped-elements';
 
 // Components
-import { Component03 } from './components/component-03.js'
-import { Component04 } from './components/component-04.js'
+import { Component03 } from './components/Component03.js'
+import { Component04 } from './components/Component04.js'
 
 export class Section02 extends ScopedElementsMixin(LitElement) {
 
@@ -34,4 +34,4 @@ export class Section02 extends ScopedElementsMixin(LitElement) {
     `
 }
 
-// customElements.define('section-02', Section02)
+customElements.define('section-02', Section02)
